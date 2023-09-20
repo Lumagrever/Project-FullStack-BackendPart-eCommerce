@@ -11,6 +11,6 @@ export const existeEmail = async ( email: string): Promise<void> => {
 
     if(existeMail && !existeMail.verified){
         await sendEmail(email,existeMail.code as string)
-        throw new Error(`El usuario ya se encuentra registrado. Se envió nuevamente el código de verificacion al correo ${email}`)
+        throw new Error(`El Email ya se encuentra registrado. Se envió nuevamente el código de verificacion al correo ${email}`)
     }
 }
