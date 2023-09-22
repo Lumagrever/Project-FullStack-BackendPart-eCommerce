@@ -20,8 +20,8 @@ export const sendEmail = async (to: string, code: string):Promise<void> => {
             to,
             subject: "Código de verificación para tu cuenta de usuario",
             text: `
-            ¡Hola, gracias por crearte una cuenta en nuestra tienda!
-            ${code} es su código de verificacion para poder acceder a la plataforma WOWSHOP API`
+            ¡Hola, gracias por registrarte en nuestra tienda!
+            "${code}" es su código de verificacion para poder acceder a la plataforma WOWSHOP API.`
         }
 
         // hacer envio del correo electronico

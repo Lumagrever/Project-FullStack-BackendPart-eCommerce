@@ -42,7 +42,7 @@ export const verifyUser = async (
 
     if (!usuario) {
       res.status(400).json({
-        message: "No se encontró el email en la base de datos",
+        message: "El Email ingresado no esta registrado",
       });
       return;
     }
@@ -82,7 +82,7 @@ export const login = async (req: Request, res: Response): Promise<void> => {
 
     if (!usuario) {
       res.status(400).json({
-        msg: "No se encontró el correo electrónico en la base de datos",
+        msg: "El Email ingresado no esta registrado",
       });
       return;
     }
